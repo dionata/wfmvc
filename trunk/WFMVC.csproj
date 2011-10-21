@@ -70,6 +70,13 @@
     <Compile Include="Windows\Forms\MvcFormApplication.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Includes\Castle.Core.dll" />
+    <Content Include="Includes\Iesi.Collections.dll" />
+    <Content Include="Includes\log4net.dll" />
+    <Content Include="Includes\NHibernate.ByteCode.Castle.dll" />
+    <Content Include="Includes\NHibernate.dll" />
+    <Content Include="Includes\NHibernate.Mapping.Attributes.dll" />
+    <Content Include="Includes\TextFile.dll" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
