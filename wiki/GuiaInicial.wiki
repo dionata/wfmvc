@@ -1,13 +1,21 @@
-#summary One-sentence summary of this page.
+#summary Guia Inicial do WFMVC.
 
-= Introduction =
+= Introdução =
 
-Add your content here.
+Há alguns anos estudo programação de sistemas e, vindo do mundo java, me acostumei com alguns padrões 
+implementados naquela plataforma.
 
+Particularmente gosto muito do padrão MVC, em contraposição ao padrão nTier da Microsoft, 
+porém aprendi agostar muito da linguagem C#, a qual utilizo no meu trabalho atualmente.
 
-= Details =
+Desenvolver aplicações em Windows Forms já era muito fácil no começo, só que me deparei com outro 
+pequeno problema, como gosto de trabalhar diretamente com classes, ao invés de DataSet's tipados, 
+resolvi criar minha própria biblioteca de extensões para o pacote *Windows Forms*, na tentativa de traduzir 
+objetos de uma camada Modelo para uma camada View.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Felizmente a linguagem C#, de muito fácil utilização, e excelente desempenho com genéricos, consegui realizar um trabalho 
+parcial, onde eu consigo traduzir diretamente objetos de um formulário a uma classe de domínio.
+
+Estarei escrevendo os manuais de uso no decorrer dos envios das atualizações.
+
+Espero que gostem do meu projeto.
