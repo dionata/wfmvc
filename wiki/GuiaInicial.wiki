@@ -1,21 +1,21 @@
 #summary Guia Inicial do WFMVC.
 
-= Introdução =
+= Introducao =
 
-Há alguns anos estudo programação de sistemas e, vindo do mundo java, me acostumei com alguns padrões 
+Ha alguns anos estudo programacao de sistemas e, vindo do mundo java, me acostumei com alguns padrões 
 implementados naquela plataforma.
 
-Particularmente gosto muito do padrão MVC, em contraposição ao padrão nTier da Microsoft, 
-porém aprendi agostar muito da linguagem C#, a qual utilizo no meu trabalho atualmente.
+Particularmente gosto muito do padrao MVC, em contraposicao ao padrao nTier da Microsoft, 
+porem aprendi agostar muito da linguagem C#, a qual utilizo no meu trabalho atualmente.
 
-Desenvolver aplicações em Windows Forms já era muito fácil no começo, só que me deparei com outro 
-pequeno problema, como gosto de trabalhar diretamente com classes, ao invés de DataSet's tipados, 
-resolvi criar minha própria biblioteca de extensões para o pacote *Windows Forms*, na tentativa de traduzir 
+Desenvolver aplicacões em Windows Forms ja era muito facil no comeco, so que me deparei com outro 
+pequeno problema, como gosto de trabalhar diretamente com classes, ao inves de DataSet's tipados, 
+resolvi criar minha propria biblioteca de extensões para o pacote *Windows Forms*, na tentativa de traduzir 
 objetos de uma camada Modelo para uma camada View.
 
-Felizmente a linguagem C#, de muito fácil utilização, e excelente desempenho com genéricos, consegui realizar um trabalho 
-parcial, onde eu consigo traduzir diretamente objetos de um formulário a uma classe de domínio.
+Felizmente a linguagem C#, de muito facil utilizacao, e excelente desempenho com genericos, consegui realizar um trabalho 
+parcial, onde eu consigo traduzir diretamente objetos de um formulario a uma classe de dominio.
 
-Estarei escrevendo os manuais de uso no decorrer dos envios das atualizações.
+Estarei escrevendo os manuais de uso no decorrer dos envios das atualizacões.
 
 Espero que gostem do meu projeto.
