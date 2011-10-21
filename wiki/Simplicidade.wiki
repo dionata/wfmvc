@@ -13,7 +13,7 @@ seguinte modelo.
 		private void ButtonToModel_Click(object sender, EventArgs e)
 		{
 			/**
-			 * Método que converte o formulario atual
+			 * MÃ©todo que converte o formulario atual
 			 * em modelo.
 			 **/
 			Modelo m = this.Model<Modelo>();
@@ -26,8 +26,8 @@ seguinte modelo.
 			//ou Model m = dao.GetModel();
 			
 			/**
-			 * Método que preenche os campos do form
-			 * através do objeto mapeado.
+			 * MÃ©todo que preenche os campos do form
+			 * atravÃ©s do objeto mapeado.
 			 **/
 			this.View(m);
 		}
