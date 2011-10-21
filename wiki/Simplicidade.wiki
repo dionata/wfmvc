@@ -40,3 +40,13 @@ em excesso, já que gosto de utilizar atributos com NHibernate, o que implicaria
 
 Os métodos de extensão acima convertem diretamente os objetos de acordo com os tipos das propriedades do objeto 
 parâmetro.
+
+É necessário que a Classe tenha seus campos definidos como Propriedade pública.
+{{{
+public DateTime Data {get;set;}
+}}}
+
+E que os nomes dos controles dos formulários sejam idênticos aos nomes das propriedades da classe relacionada.
+{{{
+private DateTimePicker Data;
+}}}
