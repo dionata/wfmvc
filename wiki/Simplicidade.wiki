@@ -1,0 +1,42 @@
+#summary Simplicidade na Conversao Entidade/Form Form/Entidade.
+
+= Conversao Simples =
+
+Para que seja evitado todo o processo de conversao de um objeto em um form e virse-versa, pense no 
+seguinte modelo.
+{{{
+	(...)
+	using WFMVC.Windows.Forms;
+	(...)
+	public class MeuForm : Form
+	{
+		private void ButtonToModel_Click(object sender, EventArgs e)
+		{
+			/**
+			 * Método que converte o formulario atual
+			 * em modelo.
+			 **/
+			Modelo m = this.Model<Modelo>();
+		}
+		
+		private void ButtonToForm_Click(object sender, EventArgs e)
+		{
+			
+			Model m = new Model();
+			//ou Model m = dao.GetModel();
+			
+			/**
+			 * Método que preenche os campos do form
+			 * através do objeto mapeado.
+			 **/
+			this.View(m);
+		}
+	}
+}}}
+
+O que eu sempre procurei foi um meio facil de converter um objeto diretamente no formulario sem ter que 
+executar toda uma implementacao de um BindingContext, ou de ter que mapear todo o objeto com atributos 
+em excesso, ja que gosto de utilizar atributos com NHibernate, o que implicaria em mais sujeira no codigo.
+
+Os metodos de extensao acima convertem diretamente os objetos de acordo com o tipo das propriedades do objeto 
+parametro.
