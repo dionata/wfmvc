@@ -19,9 +19,6 @@ namespace WFMVC.Windows.Forms
         /// </summary>
         /// <typeparam name="T">Tipo da entidade</typeparam>
         /// <param name="form">Formulário a ser convertido</param>
-        /// <param name="arg">Parâmetro opcional, em caso de conversão do formulário 
-        /// em um objeto já instanciado, caso não seja passado como parâmetro, o método 
-        /// criará uma instância do modelo.</param>
         /// <returns></returns>
         public static T Model<T>(this Form form)
         {
