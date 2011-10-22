@@ -268,7 +268,7 @@ namespace WFMVC.Windows.Forms
                 switch (f.FieldType.Name)
                 {
                     case "TextBox":
-                        String stringValue = (String)obj.GetType().GetProperty(f.Name).GetValue(obj, null);
+                        String stringValue = obj.GetType().GetProperty(f.Name).GetValue(obj, null).ToString();
                         TextBox textBox = (TextBox)f.GetValue(form);
                         textBox.Text = stringValue;
                         break;
