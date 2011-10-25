@@ -29,15 +29,20 @@ namespace WFMVC.Validation
         /// Evento de limpeza do validator.
         /// </summary>
         public event ValidatorClearEventHandler OnValidatorCleansed;
-
-
-        protected virtual void infoAdded(String info)
+        /// <summary>
+        /// Invoca o evento de adição de informações.
+        /// </summary>
+        /// <param name="info"></param>
+        protected virtual void InfoAdded(String info)
         {
             if (OnInfo != null)
                 OnInfo(this, info);
         }
-
-        protected virtual void errorAdded(String info)
+        /// <summary>
+        /// Invoca o evento de adição de erros.
+        /// </summary>
+        /// <param name="info"></param>
+        protected virtual void ErrorAdded(String info)
         {
             if (OnError != null)
                 OnError(this, info);
@@ -51,9 +56,9 @@ namespace WFMVC.Validation
         /// Adiciona uma informação ao validador.
         /// </summary>
         /// <param name="informacao">Tipo de informação.</param>
-        public void addInfo(String informacao)
+        public void AddInfo(String informacao)
         {
-            infoAdded(informacao);
+            InfoAdded(informacao);
         }
 
         /// <summary>
@@ -61,21 +66,21 @@ namespace WFMVC.Validation
         /// </summary>
         /// <param name="infotype">Tipo de informação.</param>
         /// <param name="related">Objeto relacionado.</param>
-        public void addInfo(String informacao, object related)
+        public void AddInfo(String informacao, object related)
         {
             informacao += " - " + related;
-            infoAdded(informacao);
+            InfoAdded(informacao);
         }
 
         /// <summary>
         /// Adiciona um erro ao validador.
         /// </summary>
         /// <param name="info">Tipo de informação do erro</param>
-        public void addError(String erro)
+        public void AddError(String erro)
         {
             if (!errorList.Contains(erro))
                 errorList.Add(erro);
-            errorAdded(erro);
+            ErrorAdded(erro);
         }
 
         /// <summary>
@@ -83,24 +88,28 @@ namespace WFMVC.Validation
         /// </summary>
         /// <param name="infotype">Tipo de informação do erro</param>
         /// <param name="related">Objeto relacionado</param>
-        public void addError(String erro, object related)
+        public void AddError(String erro, object related)
         {
             erro += " - " + related;
             if (!errorList.Contains(erro))
                 errorList.Add(erro);
-            errorAdded(erro);
+            ErrorAdded(erro);
         }
 
         /// <summary>
         /// Retorna uma coleção de erros do validador.
         /// </summary>
         /// <returns>Retorna os erros do validador</returns>
-        public IList<String> getErrors()
+        public IList<String> GetErrors()
         {
             return errorList;
         }
 
-        public bool containsErrors()
+        /// <summary>
+        /// Informa se o validador contém erros.
+        /// </summary>
+        /// <returns></returns>
+        public bool ContainsErrors()
         {
             return errorList.Count > 0;
         }
